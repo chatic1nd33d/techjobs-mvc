@@ -37,7 +37,11 @@
     <hr />
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
-
+    <table th:style="job-listing" th:fragment="joblist">
+        <tr th:each="job : ${jobs}">
+            <td th:text="${job}"></td>
+        </tr>
+    </table>
 </div>
 
 </body>
